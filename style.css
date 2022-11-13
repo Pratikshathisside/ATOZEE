@@ -1,0 +1,149 @@
+/* latin */
+@font-face {
+    font-family: 'Macondo';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/macondo/v21/RrQQboN9-iB1IXmOe2LE0Q.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+.container {
+    width: "100%";
+    height: "100vh";
+    position: relative;
+}
+
+.container video {
+    width: "100%";
+    height: "100%";
+}
+
+.text-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000;
+    height: "100%";
+    width: "100%";
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 100px;
+    font-weight: 900;
+    mix-blend-mode: multiply;
+
+}
+
+.hero {
+    width: "100%";
+    height: 100vh;
+    background-image: linear-gradient(rgba(16, 16, 17, 0.659), rgba(22, 21, 21, 0.5));
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+nav {
+    width: "100%";
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 30px 8%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-between;
+}
+
+
+
+nav .logo {
+    width: 150px;
+
+    left: 0;
+    top: 0;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 140px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    text-align: center;
+
+}
+
+.content h1 {
+    font-size: 150px;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.content a {
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    color: #fff;
+    font-size: 24px;
+    border: 2px solid #fff;
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top: 20px;
+
+}
+
+.content a:hover {
+
+    text-decoration: underline;
+}
+
+.content h1:hover {
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+
+}
+
+.back {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+
+}
+
+
+
+@media (min-aspect-ratio: 16/9) {
+    .back {
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .back {
+        width: auto;
+        height: 100%;
+    }
+}

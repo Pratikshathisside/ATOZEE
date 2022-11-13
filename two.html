@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atozee online Shopping</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="hero">
+        <video autoplay loop muted plays-inline class="back">
+            <source src="shop.mp4" type="video/mp4">
+        </video>
+        <nav>
+
+            <img src="atozee.png" class="logo" onclick="togglemenu()">
+
+            <ul id="menulist">
+                <li><a href="two.html">HOME</a></li>
+                <li><a href="men.html">MEN</a></li>
+                <li><a href="women.html">WOMEN</a></li>
+                <li><a href="kids.html">KIDS</a></li>
+                <li><a href="#">CONTACT US </a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <h1>
+                ATOZEE
+
+            </h1>
+            <a href="#">Explore</a>
+
+        </div>
+    </div>
+    <script>
+        var menulist = document.getElementById("menulist");
+        menulist.style.maxHeight = "0px";
+        if (menulist.style.maxHeight == "0px") {
+            menulist.style.maxHeight == "130px";
+        }
+        else {
+            menulist.style.maxHeight == "0px";
+        }
+    </script>
+</body>
+
+</html>
